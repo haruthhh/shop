@@ -1,5 +1,7 @@
 <?php
+
 session_start();
+
 require_once("user/view/header.php");
 require_once("admin/model/model.php");
 require_once("user/model/model.php");
