@@ -13,8 +13,11 @@ if(empty(trim($_POST['login']))||empty(trim($_POST['password']))){
 $login=$_POST['login'];
 $password=$_POST['password'];
 
+
+
 if(checkAdmin($login,$password)) {
 	header("location:../view/home.php");	
+	
 } else {
 	$_SESSION['error'] = "Incorrect login or password!";
 	header("location:../index.php");
