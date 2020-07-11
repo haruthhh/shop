@@ -1,0 +1,36 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.shop{
+	background-color: black;
+	
+	width: 20%;
+}
+.name{
+	font-size: 1.7em;
+	padding:20px 0px 20px 80px;
+	text-transform: uppercase;
+	width: 80%;
+	background-color: green;
+}
+.shop{
+	padding: 20px 0px;
+	font-size: 1.7em;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+#head{
+	display: flex;
+}
+#left{
+	width: 20%;
+}
+#admin{
+	background-color: #4380B9;
+}
+.admin{
+	text-transform: uppercase;
+	font-size: 1.2em;
+}

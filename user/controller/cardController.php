@@ -1,0 +1,31 @@
+<?php
+session_start();
+require_once("../model/model.php");
+if(!isset($_POST['action']))die;
+$action=$_POST['action'];
+if($action=='avelacnel'){
+	$id=$_POST['id'];
+	$name=$_POST['name'];
+	$price=$_POST['price'];
+	$_SESSION['card'][$id]=1;
+	echo $_SESSION['card'][$id];
+}
+if($action=='change'){
+	$id=$_POST['id'];
+	$quantity=$_POST['quantity'];
+	$_SESSION['card'][$id]=$quantity;
+}
+if($action=='delete'){
+	$id=$_POST['id'];
+	unset($_SESSION['card'][$id]);
+	if(empty($_SESSION['card'][$id])){
+		unset($_SESSION['card'][$id]);
+	}
+}
+if($action=='orders'){
+	$name=$_POST['name'];
+	$price=$_POST['price'];
+	$quantity=$_POST['quantity'];
+	addOrders($name,$quantity,$price);
+
+}

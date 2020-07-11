@@ -1,0 +1,41 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.main{
+	width: 100%;
+	background: url(../images/2-300.jpg) no-repeat 0 0 / cover;
+}
+#admin{
+	color: rgba(31,266,253, 0.4);
+	font-size: 5.5em;
+	font-weight: bolder;
+	margin: 0px 14%;
+	text-align: center;
+	padding: 19% 7% 0% 7%;
+
+}
+input{
+	text-align: center;
+	width: 18%;
+	padding: 1% 2%;
+	margin: 1% 1%;
+	/*height: 5%;*/
+}
+button{
+	border: 0px solid black;
+	width: 10%;
+	padding: 1% 2%;
+	margin: 1% 1%;
+	background-color: #1F42FD;
+}
+button:hover{
+	cursor: pointer;
+
+}
+.input{
+	border: 0px solid black;
+	margin: 0% 10%;
+	padding: 3% 10% 16% 10%;
+	text-align: center;
+}
